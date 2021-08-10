@@ -22,9 +22,9 @@ requirements:
     - numpy
     - cython
     - pip
-    - attrs
   run:
     - python
+    - attrs
     - {{ pin_compatible('numpy') }}
 
 test:
