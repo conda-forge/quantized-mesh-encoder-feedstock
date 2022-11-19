@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 {% set name = "quantized-mesh-encoder" %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f1642158a1e7d1e56468e408f80a8c30908373a6b3de3d954fdf4bef0370a63b
+  sha256: 00be53849a3bae3e23d2e1bd6e6fe138b751e077f05ff3bea2f00d982ad82a9a
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py<36] [python_impl == 'pypy']
   script: {{ PYTHON }} -m pip install . -vv
 
