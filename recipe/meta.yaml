@@ -10,7 +10,7 @@ source:
   sha256: 8b2e133dde20ae81a727445c28f47f303c2126f3b0915e19f0c8ef88710bef40
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<36] [python_impl == 'pypy']
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,6 +27,7 @@ requirements:
     - numpy
     - cython
     - pip
+    - setuptools
   run:
     - python
     - attrs
